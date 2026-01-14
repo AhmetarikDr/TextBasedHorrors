@@ -1,35 +1,113 @@
-Monologue0 = [
-    "???", # 0
-    "You can't see anything, it's just black", # 1
-    "You can't hear anything, even your heartbeat", # 2
-    "You don't remember where you are, or who you are", # 3
-    "It feels lonely, dead...", # 4
-    "You feel something?!", # 5
-    "It's like words shaping in your mind", # 6
-    "Like someone is talking in your head" # 7
-]
+d1 = {
+    "Entrance": {
+        "Lines": [
+            "The ship has 12 crew members and a captain",
+            "You are the newest member, so you get to do the chores!",
+            "One day, when you are counting how much food left in the storage",
+            "You hear a really loud noise! And the whole spaceship shakes rapidly!",
+            "Before you get a chance to react, you hit your head and fell unconscious",
+            "...................",
+            "After an unknown amount of time, you wake up",
+            "You feel a little dizzy. But more importantly, you are curious",
+            "'What just happened?', 'Is everybody alright?'",
+            "So you begin searching for answers...",
+            "(you can use 'key words' to move around and interact with objects)",
+            "(the objects you can interact with will be listed after you enter any room)",
+            "(the key words are; 'go' and 'int'[interact])",
+            "(also you can use 'save' to save your progress and 'quit' to close the game)",
+            ],
+        "Options": []
+    },
 
-Entrance = [ # storing every dialogue in a single list might not be a good idea
-    "Are you reading this? (yes/no)", # 0
-    "Hahaha funny. You remember everything right?", # no 1
-    "Good. You remember everything right?", # yes 2
+    "Can read": {  # these are from the old storyline i didn't ereased
+        "Lines": [
+            "Good. You remember everything right?"
+        ],
+        "Options": ["Can remember", "Can't remember"]
+    },
 
-    "Okay then. Just like we planned, you need to find the 'source'. The thing that holds this program.", # yes 3
+    "Can't read": {
+        "Lines": [
+            "Hahaha funny. You remember everything right?",
+        ],
+        "Options": ["Can remember", "Can't remember"]
+    },
 
-    "Okay, don't panic. We knew this could happen. Let me explain what is going on to you:", # no 4
-    "You are a research assistant in LIVE scientific research corporation.", # explanation 5
-    "I am the head of the 'Living Code Project'.", # 6
-    "We are trying to create the smartest AI by simulating real world in computers for AI to explore and improve.", # 7
-    "But our simulation that we used to train AI has been giving some errors lately.", # 8
-    "Your job is to find the problem and solve it from the inside.", # 9
-    "Your brain is connected to the simulation so you can explore freely.", # 10
-    "As you progress deeper in the simulation it will get harder for me to reach you, so i won't be able to help you all the time.", # 11
+    "Can remember": {
+        "Lines": [
+            "Okay then. Just like we planned, you need to find the source. The thing that holds this program.",
+            "Good luck out there...",
+            "You can feel him getting out of your head, it's time to explore",
+            "(you can use 'key words' to move around and interact with objects)",
+            "(the objects you can interact with will be listed after you enter any room)",
+            "(the key words are; 'go', 'check', 'take', 'use' and 'talk')",
+            "(also you can use 'save' to save your progress and 'quit' to close the game)",
+        ],
+        "Options": [] # no dialogue, just navigation
+    },
 
-    "Let's start then, good job out there. (You can feel him getting out of your head, it's time to explore)", # 12
-    "(you can use 'key words' to move around and interact with objects)", # start ot tutoriel 13
-    "(use 'help' to get a list of possible key words)", # 14
-]
+    "Can't remember": {
+        "Lines": [
+            "Okay, don't panic. We knew this could happen. Let me explain what is going on to you:",
+            "You are a research assistant in LIVE scientific research corporation.",
+            "I am the head of the 'Living Code Project'.",
+            "We are trying to create the smartest AI by simulating real world in computers for AI to explore and improve.",
+            "But our simulation that we used to train AI has been giving some errors lately.",
+            "Your job is to find the problem and solve it from the inside.",
+            "Your brain is connected to the simulation so you can explore freely.",
+            "As you progress deeper in the simulation it will get harder for me to reach you, so i won't be able to help you all the time.",
+            "Good luck out there...",
+            "You can feel him getting out of your head, it's time to explore",
+            "(you can use 'key words' to move around and interact with objects)",
+            "(the objects you can interact with will be listed after you enter any room)",
+            "(the key words are; 'go', 'check', 'take', 'use' and 'talk')",
+            "(also you can use 'save' to save your progress and 'quit' to close the game)",
+        ],
+        "Options": [] # no dialogue, just navigation
+    },
+}
 
-Monologue1 = [
-    "You can feel him getting out of your head, it's time to 'explore'"
-]
+d2 = {
+    "Entrance": {
+        "Lines": [
+            "The door to the corridor want's a password",
+            "Not a word actually, a whole sentence",
+            "You don't remember such a long code, right?",
+            "[write, don't]"
+            ],
+        "Options": []
+    },
+}
+
+d3 = {
+    "Entrance": {
+        "Lines": [
+            "-That monster... it killed everyone... i couldn't stop it",
+            "-I wasn't a good enough captain i guess... eheh",
+            "-But i want you... to survive",
+            "-My ship... is in the port",
+            "-take this key... and save yourself",
+        ],
+        "Options": ["Wow thanks cheif", "I want to kill that monster!"]
+    },
+    "Wow thanks cheif": {
+        "Lines": [
+            "You took the ship key",
+            "Captain... died (what was his name again?)"
+        ],
+        "Options": []
+    },
+    "I want to kill that monster!": {
+        "Lines": [
+            "-Really? ehehe...",
+            "-Then take this key instead",
+            "Captain gave you the wardrobe key",
+            "-My shotgun is in my wardrobe... in the other... bedroom...................................",
+            "You know what you should do"
+        ],
+        "Options": []
+    }
+}
+
+
+
