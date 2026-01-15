@@ -145,6 +145,9 @@ while True:
             print("There are no doors in that direction.")
 
     if actionList[0] == "int":
+        if len(actionList) < 2:
+            slow_print("with what???")
+            continue
         targetItem = actionList[1]
         if "item" in dict.rooms[CurrentLocation]:
             if targetItem in dict.rooms[CurrentLocation]["item"]:
