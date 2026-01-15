@@ -14,7 +14,6 @@ d1 = {
             "(you can use 'key words' to move around and interact with objects)",
             "(the objects you can interact with will be listed after you enter any room)",
             "(the key words are; 'go' and 'int'[interact])",
-            "(also you can use 'save' to save your progress and 'quit' to close the game)",
             ],
         "Options": []
     },

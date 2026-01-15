@@ -11,6 +11,7 @@ CurrentLocation = "siloA"
 inventory = []
 textspeed = 0.02
 
+skipped = False
 answers = ["write", "don't"]
 cevaplar = ["open", "nope"]
 boom = ["destroy", "NOO"]
@@ -52,6 +53,7 @@ while True:
             elif "lever" in inventory and "shotgun" not in inventory:
                 slow_print("You throw your lever to the monster, it got scared and run away")
                 slow_print("You lost your lever in the process")
+                inventory.remove("lever")
 
                 placeHolder = MonsterLocation
                 MonsterRooms.remove(MonsterLocation)
