@@ -96,6 +96,9 @@ while True:
         actionList = action.split(" ", 1) # splits every word of the user
 
     if actionList[0] == "go":
+        if len(actionList) < 2:
+            slow_print("go where??")
+            continue
         direction = actionList[1]
         if direction in Dictindict.rooms[CurrentLocation] and direction != "item" and direction != "Options": # make sure i don't go to "items"
             yönüm = Dictindict.rooms[CurrentLocation][direction]
