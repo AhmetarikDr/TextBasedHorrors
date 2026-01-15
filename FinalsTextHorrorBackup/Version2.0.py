@@ -100,7 +100,7 @@ while True:
             slow_print("go where??")
             continue
         direction = actionList[1]
-        if direction in Dictindict.rooms[CurrentLocation] and direction != "item" and direction != "Options": # make sure i don't go to "items"
+        if direction in Dictindict.rooms[CurrentLocation] and direction != "item" and direction != "Options" and direction != "locked": # make sure i don't go to "items"
             yönüm = Dictindict.rooms[CurrentLocation][direction]
             nextRoom = Dictindict.rooms.get(yönüm)
 
