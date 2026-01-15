@@ -95,6 +95,9 @@ while True:
         action = input(">")
         actionList = action.split(" ", 1) # splits every word of the user
 
+    if actionList[0] == "quit":
+        break
+
     if actionList[0] == "go":
         if len(actionList) < 2:
             slow_print("go where??")
