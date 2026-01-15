@@ -29,7 +29,7 @@ def validInput(keyWords):
 
 def slow_print(message, delay=0.02):
     for char in message:
-        print(char, end = "")
+        print(char, end = "", flush=True)
         time.sleep(delay)
     print()
 
